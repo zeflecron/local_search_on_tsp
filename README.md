@@ -1,6 +1,8 @@
 # Local Search on TSP
 Local search algorithms solving the travelling salesman problem with matplotlib plotting
 
+![v1.0/img_1.0_1.PNG](https://github.com/zeflecron/local_search_on_tsp/blob/main/changelog/v1.0/img_1.0_1.PNG)
+
 # How to run it
 1. Put all the folders and files into a directory
 2. Create a virtual environment in that directory using cmd: `python -m venv venv`
