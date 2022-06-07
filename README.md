@@ -22,8 +22,7 @@ It has 2 variations, random-restart and stochastic (both are shown in the plotti
 - Stochastic is also random, but it only swaps points one by one and only accepts them if they improve the result. A worse result would be reverted back to the previous one
 
 ### 2. Beam Search
-(I myself am not sure if the definition is correct but, it is basically multiple hill climbing rather than just 1)
-It takes a certain number of improvements first before selecting another certain number of improved results and then the process repeats itself
+Multiple Hill Climbing instead of just 1, takes a certain number of improvements first before selecting another certain number of improved results
 
 Example: 
 - Root generates 5 improvements
@@ -32,14 +31,14 @@ Example:
 - And from 10, 2 is selected, and so on
 
 ### 3. Simulated Annealing
-Very similar to stochastic hill climbing but it has a random chance of taking a worse option in order to escape the local minima. Based on the name itself, it simulates the annealing process, start of with high temperature then it start to cool down slowly
+Stochastic hill climbing but it has a random chance of taking a worse option in order to escape the local minima
 
 - High initial temperature = More chaotic start
 - Low alpha/cooling = Better chance to improve
 - High end temperature = Might stop at local minimum
 
 ### 4. Genetic Algorithm
-It is like partial DNA swapping with selective improvements (uses the cycle algorithm to retain the parts of DNA)
+Uses the cycle algorithm to retain the parts of DNA
 
 - DNA is first generated randomly with a certain number of population
 - The population is then put into a fitness test (how well the result is or if it is even worse)
@@ -54,4 +53,3 @@ Uses matplotlib (although PyQtGraph might be better for smoother experience)
 - If plotting window is too big, it can be changed in the code
 - If real-time is too slow/too fast, change the interval/frames
 - If real-time does not work, switch to normal plotting (but it only shows the initial/final result)
-
